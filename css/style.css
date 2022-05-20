@@ -11,11 +11,10 @@
 .content {
     width: 80%;
     margin: 0 auto;
-    background-color: aqua;
 }
 
 header {
-    margin: 2% 0px;
+    margin: 5% 0px 2% 0px;
 }
 
 .subtitle {
@@ -23,9 +22,13 @@ header {
     display: flex;
     align-items: center;
 }
+.subtitle i{
+    font-size: 22px;
+}
 
 .subtitle-itens {
     margin-right: 1%;
+    font-weight: 500;
 }
 
 .gallery {
@@ -36,17 +39,17 @@ header {
 
 .gallery img {
     border-radius: 2%;
+    transition-duration:0.5s ;
 }
 
 .gallery>img {
     width: 50%;
+    border-radius: 2% 0 0 2%;
     height: 100%;
-    background-color: aqua;
     margin-right: 1%;
 }
 
 .gallery figure {
-    background-color: yellow;
     height: 100%;
     width: 50%;
     display: flex;
@@ -63,11 +66,16 @@ figure img {
 
 .desc {
     width: 100%;
-    margin: 3% 0px;
+    margin: 2% 0px 5% 0px;
+}
+.desc h2{
+    margin-bottom: 0.63%;
+}
+.desc hr{
+    margin-top: 30px;
 }
 
 .informations {
-    background-color: yellowgreen;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -76,6 +84,9 @@ figure img {
 
 .benefits {
     width: 30%;
+}
+.benefits h2{
+    font-size: 27px;
 }
 
 .icons {
@@ -88,6 +99,7 @@ figure img {
 .icons i {
     font-size: 50px;
     margin: 2% 5%;
+    transition-duration:0.1s ;
 }
 
 .price {
@@ -103,14 +115,30 @@ figure img {
 .price p {
     width: 100%;
     font-size: 40px;
+    font-weight: 900;
     margin: 2% 0px;
 }
 
-.price a {
+.button{
     margin: 0 auto;
     width: 60%;
     padding: 20px 50px;
     background-color: #dc143c;
+    border-radius: 6px;
     font-size: 20px;
+    font-weight: 600;
     color: #fff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.button:hover{
+    background-color: #af0729;
+    cursor: pointer;
+    transform: scale(1.06);
+}
+img:hover{
+    transform: scale(1.06);
+}
+.icons i:hover{
+    transform: scale(1.1);
 }
